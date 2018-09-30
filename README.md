@@ -76,5 +76,36 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
 
 # Implementation Details 
 
-<h5> Module 1 : ibm-aggregator </h5>
+<h4> Module 1 : ibm-aggregator </h4>
+<ul>
+  <li> Python Libraries Used : Flask,tweepy,json,csv,requests,xml.etree.ElementTree</li>
+  <li> For each user we have a single document in the collection "aggregate" fo DB "ibm" in MongoDB. When the user first enters the system, ibm-aggregator checks the DB if these set of social-media IDs exist in DB. If not implies he has come to the web app for the first time and a new document is created for him.If not then the previous document is deleted and a new one is created for him.</li>
+  <li>><h6> Twitter Sub-Module : </h6></li>
+  <ul>
+    <li> Motivation : To get user's tweets of past 7 days to undertsand what were the instantaneoud emotions he went though.</li>
+    <li> Data collected : For each tweet, we collect tweet text,time and language of tweet.</li>
+  </ul>
+  <li>><h6> Instagram Sub-Module : </h6></li>
+  <ul>
+    <li> Motivation : To get hash tags of each post which convey user's current state of mind and perform visual recognition on images.</li>
+    <li> Data collected : For each post, we collect post's hashtages and post's image URL and number of likes and store it in DB<li>
+  </ul>
+  <li>><h6> Medium Sub-Module : </h6></li>
+  <ul>
+    <li> Motivation : To get insights into user's perosnality and interests.</li>
+    <li>Data Collected : For each blog, the blog content and date of publish.</li>
+  </ul>
+  
+  <li><h6> Process Flow : </h6></li>
+  <ul>
+  <li>When user provides the social media handles the UserInterface first calls the ibm-aggregator module to fetch the data into DB which would be then analysed.</li>
+  <li>Typical API Call looks like : http://ibm-aggregator.herokuapp.com/aggregate/oldirony/amitabhtiwari3/pandey_amita</li>
+  <li>Now the DB Document created for this user looks like: 
+    ![ibm-agg-DB1](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-agg1.png)
+    ![ibm-agg-DB2](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-agg2.png)
+    ![ibm-agg-DB3](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-agg3.png)
+  <li>
+  </ul>
+</ul>
+
 
