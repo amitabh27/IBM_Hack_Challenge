@@ -76,7 +76,7 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
 
 # Implementation Details 
 
-<h4> Module 1 : ibm-aggregator </h4>
+<h3> Module 1 : ibm-aggregator </h3>
 <ul>
   <li> Python Libraries Used : Flask,tweepy,json,csv,requests,xml.etree.ElementTree</li>
   <li> For each user we have a single document in the collection "aggregate" fo DB "ibm" in MongoDB. When the user first enters the system, ibm-aggregator checks the DB if these set of social-media IDs exist in DB. If not implies he has come to the web app for the first time and a new document is created for him.If not then the previous document is deleted and a new one is created for him.</li>
@@ -113,7 +113,7 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
 <br><br>
 
 
-<h4> Module 2 : ibmanalyser </h4>
+<h3> Module 2 : ibmanalyser </h3>
 <ul>
   <li> NodeJS Modules Used : watson-developer-cloud,image-downloader,request,async,body-parser,request,fs,algorithmia etc</li>
   <li> When ibm-aggregator has successfully agregated the data, the UI calls ibm-analyser to enrich the data with emotion intelligence.</li>
@@ -164,8 +164,8 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
     ![ibm-ana-DB3](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ana3.png)<br>
     ![ibm-ana-DB4](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ana4.png)<br>
     
-   
-<h4> Module 3 : ibm-recommender </h4>
+  <br><br>
+<h3> Module 3 : ibm-recommender </h3>
 <ul>
   <li> Python packages Used : numpy,pandas,gensim,nltksklearn,pyLDAvis,datetime,kmodes,pickle etc</li>
   <li> After ibm-analyser has updated the user document,based on emotion the UI calls the recommender for pro-tips from doctors and psychologists to fight the adverse effects of emotions. This REST Server acting as recommendation engine then returns a set of 5 articles obtained from LDA and TF-IDF Model.</li>
@@ -191,6 +191,54 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
 
 
  ![ibm-rec-DB1](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-rec1.png)<br>
-    ![ibm-rec-DB2](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-rec2.png)<br>
+ ![ibm-rec-DB2](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-rec2.png)<br>
 
     
+  <br><br>
+<h3> Module 4 : Web APP : User Interface </h3>
+<ul>
+  <li> Motivation : To come up with a dashboard with data visualisations to help user understand himself and the real-word entities that are influencing his state of mind. Also to come up with video,songs and articles recommendations based on his prominent emotion. Plus to come up with Nearby places to explore and Yoga Asanas to practice to overcome the diffcult times.</li>
+  <li> After ibm-analyser has updated the user document, the UI calls the Recommender for articles,Youtube APIs for songs and videos based on his current emotion. Google charts APIs are called for data visulaisations and Nearby APIs for places to eat,worship or explore natural beauty. Yoga Asanas Carousels are created at run time depending on his state of mind. </li>
+  <li><h6>Youtube APIs for videos and songs: </h6></li>
+  <ul>
+    <li> Motivation : To get funny content and relaxing music.</li>
+    <li> Outcome : 3 responses for videos and songs. User can click on it and he will be redirected to youtube site to play the same.</li>
+  </ul>
+  
+   <li><h6>ibm-recommender APIs for articles: </h6></li>
+  <ul>
+    <li> Motivation : To get professional tips on how to deal with certain kind of emotions.</li>
+    <li> Outcome : 5 tips are presented on the dashboard.</li>
+  </ul>
+  
+  <li><h6>Google Nearby APIs for Nearby places to eat,worship or of natural beauty: </h6></li>
+  <ul>
+    <li> Motivation : To cheer up people with depressions, psychologu syas it's important to get out of your home, visit places that have good vibes to calm down your mind. The user's current location can be known through browser. Currently set to "electronic city bangalore". Then the Nearby APIs are called to get list of restaurants,holy places and natural beauties around that location. </li>
+    <li> Outcome : Lists of places, clicking on any list item, redirects to google maps with the the source as your current location and destination as the Latitude,Longitude of list item you clicked on giving you a glimpse of how to reach the destination./li>
+  </ul>
+  
+  <li><h6>Carousels of images showing Yoga Asanas : </h6></li>
+  <ul>
+    <li> Motivation : There are different Yoga positions to practice depending on the emotion you are feeling.</li>
+    <li> Outcome : Same is presented to user depending on whether he is feeling happy,sad or disgusting.</li>
+  </ul>
+  
+  <li><h6>Data Visualisations using Google Chart APIs</h6></li>
+  <ul>
+    <li> Motivation : To come up with a dashboard to help user undertand himself better.</li>
+    <li> Outcome : Different kinds of graphs and pie-charts depicted below.</li>
+  </ul>
+
+ 
+  <li><h6> Process Flow : </h6></li>
+  <ul>
+  <li>UI does API calls and gets the dashboard populated with data from DB and external 3rd party APIs.</li>
+  <li>Snapshots : UI elements are as follows.</li>
+  </ul>
+</ul>
+
+
+ ![ibm-ui-DB1](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ui1.png)<br>
+ ![ibm-ui-DB2](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ui2.png)<br>
+ ![ibm-ui-DB3](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ui3.png)<br>
+ ![ibm-ui-DB4](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ui4.png)<br>
