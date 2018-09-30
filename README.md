@@ -100,12 +100,13 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
   <ul>
   <li>When user provides the social media handles the UserInterface first calls the ibm-aggregator module to fetch the data into DB which would be then analysed.</li>
   <li>Typical API Call looks like : http://ibm-aggregator.herokuapp.com/aggregate/oldirony/amitabhtiwari3/pandey_amita</li>
-  <li>Now the DB Document created for this user looks like: <br>
-    ![ibm-agg-DB1](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-agg1.png)<br>
-    ![ibm-agg-DB2](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-agg2.png)<br>
-    ![ibm-agg-DB3](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-agg3.png)<br>
-  </li>
+  <li>Now the DB Document created for this user looks like:</li>
   </ul>
 </ul>
 
 
+ ![ibm-agg-DB1](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-agg1.png)<br>
+    ![ibm-agg-DB2](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-agg2.png)<br>
+    ![ibm-agg-DB3](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-agg3.png)<br>
+    
+    
