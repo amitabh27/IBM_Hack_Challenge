@@ -1,8 +1,27 @@
 # hackathon
 SHADE Engine to detect the emotions of a person based on his/her social media activity and recommend measures to improve upon the same.
 
-<h4> Problem Statement </h4>
+# Problem Statement
 
 Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE) is a software solution which tries to analyse your current emotions based on the content that you share on different social media websites. With advances in technology, it has now become easy to detect the emotions user is going though by using NLP on the text shared which when combined with visual recognition on the images gives a concrete solution to take calm down measures before hand he/she chooses any drastic actions.
 
+# Proposed Solution
 
+<ul>
+  <li>The social media websites that we are targeting to understand user's current emotions are :</li>
+  <ul>
+    <li><b>Twitter</b> : We see twitter as a place where people express their instant emotions about Named Entities(Name,place,Product,Organisation etc).</li>
+    <li><b>Instagram </b>: We see instagram as a rich source of data because of the #Tags usage and images a user shares which points to his current mental well being</li>
+    <li><b>Medium </b>: The earlier two websites are used by people to express their momentary emotions where as when it comes to the most popular blog website like medium, analysing user's blogs gives you deep insights about his interests,personality and his state of mind.</li>
+  </ul>
+  
+<li>
+  The software solution will have the following components :
+  <ul>
+    <li><b>Data Aggregator </b>: It will be a REST Server to aggregate data from different social media websites and put it in a NoSQL DB</li>
+    <li><b>Data Analyser </b>: It shall use the data aagregated previously and use IBM Watson components like Language Transaltor,NLP and Analytics,Tone Analyser,Personality Insights,Custom Models to understand user's state of mind.</li>
+    <li><b>Suggested Measures </b>: Once the user's state of mind has been understood. We shall give him data visualizayions to help him understand himself better and songs,videos,articles,yoga asanas and nearby places to eat,worship or of natural beauty depending the most prominent emotion detected.</li>
+   </ul>
+</li>  
+  
+</ul>
