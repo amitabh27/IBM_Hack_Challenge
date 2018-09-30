@@ -110,3 +110,61 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
     ![ibm-agg-DB3](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-agg3.png)<br>
     
     
+<br><br>
+
+
+<h4> Module 2 : ibmanalyser </h4>
+<ul>
+  <li> NodeJS Modules Used : watson-developer-cloud,image-downloader,request,async,body-parser,request,fs,algorithmia etc</li>
+  <li> When ibm-aggregator has successfully agregated the data, the UI calls ibm-analyser to enrich the data with emotion intelligence.</li>
+  <li><h6> Watson - Language Translator Sub-Module : </h6></li>
+  <ul>
+    <li> Motivation : Using the tweet language field , convert tweets in other language to english.</li>
+    <li> Outcome : Now all the tweets have been converted to english.</li>
+  </ul>
+  <li><h6> Watson - Tone Analyser Sub-Module : </h6></li>
+  <ul>
+    <li> Motivation : To analyse the tone behind the set of words tweeted by the user.</li>
+    <li>Outcome : To get scores of different emotions like sad,happy etc and add them to each tweet object and the one with highest score is chosen as the prominent emotion .</li>
+     </ul>
+  
+  <li><h6> Watson - Natural Language Understanding  and Analytics Sub-Module : </h6></li>
+  <ul>
+    <li> Motivation : It is applied to Tweets to get keywords and Entities the user is influenced by.</li>
+    <li>Outcome : Keywords array and Entities array added to user's document.</li>
+  </ul>
+  
+  <li><h6> Watson - Personality insights Sub-Module : </h6></li>
+  <ul>
+    <li> Motivation : It is applied to Blogs and Instagram Hashtags to know the personality attributes of user.</li>
+    <li>Outcome :Personality insights array added to user's document with different parent quality and corresponding children quality.</li>
+  </ul>
+  
+  <li><h6> Watson - custom ML Model and Algorithmia Model Sub-Module : </h6></li>
+  <ul>
+    <li> Motivation : to create a customised 2-layer Network of Models to understand the emotions involved in an image for each instagram post.
+        <ul>
+          <li> <b>First Layer Model : Algorithmia model </b>- To find if the image has any human faces involved in it. If YES then the face emotions are extracted out to be associated with image.</li>
+          <li> <b>Second Layer Model : Watson Custom Model </b>- when first layer model confirms that there is no human being in the image then we make use of aesthetics of the image to determine emotion with a model trained with two sets of images like ones that are charcaterized by colors like black,grey,dark shades of blue and the other with much more vibrant colors. The first signifie sthat the user is feeling low while the second is an indicator of joy.</li>
+          
+         </ul> 
+  
+  </li>
+    <li>Outcome : Each instagram post object is updated with the associated emotion.</li>
+  </ul>
+  
+  <li><h6> Process Flow : </h6></li>
+  <ul>
+  <li>When ibm-aggregator confirms that the data has been aggregated in DB, ibm-analyser comesinto action and does perform all the analysis and updates the user docuemnt with enriched analytical results.</li>
+  <li>Typical API Call looks like : ibmanalyser.eu-gb.mybluemix.net/users/readProfile/amitabhtiwari3/oldirony/pandey_amita</li>
+  <li>Now the DB Document created for this user looks like:</li>
+  </ul>
+</ul>
+
+
+ ![ibm-ana-DB1](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ana1.png)<br>
+    ![ibm-ana-DB2](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ana2.png)<br>
+    ![ibm-ana-DB3](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ana3.png)<br>
+    ![ibm-ana-DB4](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ana4.png)<br>
+    
+   
