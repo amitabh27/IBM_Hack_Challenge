@@ -27,6 +27,7 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
 </ul>
 
 # Architecture of solution implemented
+<br>
 
 ![architecture](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/archi.png)
 
@@ -68,7 +69,7 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
 
 
 
-
+# Implementation Details 
 
 
 
