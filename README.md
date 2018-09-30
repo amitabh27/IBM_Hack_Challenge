@@ -147,7 +147,7 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
           <li> <b>Second Layer Model : Watson Custom Model </b>- when first layer model confirms that there is no human being in the image then we make use of aesthetics of the image to determine emotion with a model trained with two sets of images like ones that are charcaterized by colors like black,grey,dark shades of blue and the other with much more vibrant colors. The first signifie sthat the user is feeling low while the second is an indicator of joy.</li>
           
         
-    <li>Outcome : Each instagram post object is updated with the associated emotion.</li>
+  <li> Outcome : Each instagram post object is updated with the associated emotion.</li>
   </ul>
   
   <li><h6> Process Flow : </h6></li>
