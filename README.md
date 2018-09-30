@@ -1,5 +1,10 @@
 # hackathon
 SHADE Engine to detect the emotions of a person based on his/her social media activity and recommend measures to improve upon the same.
+<ul>
+  <li>Ideation document : </li>
+  <li> Presentation Slides : </li>
+  <li> Working of solution (video) : </li>
+</ul>
 
 # Problem Statement
 
@@ -64,8 +69,8 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
     <li>Data for ML Models : CSVs with tips from doctors and psychologists to fight different emotions.</li>
   </ul>
   <li>For instagram, business accounts were having a 15days approval period to get access to APIs but since we dint have that much of time, we used a hack wherein the instagram data of any user can be obtained from this URL : https://www.instagram.com/iam_niks026/?__a=1
-   where iam_niks026 is the "TwitterHandle".So currently we have used that as the JSON Response and kept it on server and built a JSON parser on top of it. When the solution goes live the FILE Reading will be replaced by the API calling.
-<ul>
+   where iam_niks026 is the "TwitterHandle".So currently we have used that as the JSON Response and kept it on server and built a JSON parser on top of it. When the solution goes live the FILE Reading will be replaced by the API calling.</li>
+</ul>
 
 
 
