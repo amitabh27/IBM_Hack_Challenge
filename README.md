@@ -140,7 +140,7 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
     <li>Outcome :Personality insights array added to user's document with different parent quality and corresponding children quality.</li>
   </ul>
   
-  <li><h6> Watson - custom ML Model and Algorithmia Model Sub-Module : </h6></li>
+  <li><h6> Watson - Custom ML Model and Algorithmia Model Sub-Module : </h6></li>
   <ul>
     <li> Motivation : to create a customised 2-layer Network of Models to understand the emotions involved in an image for each instagram post.</li>
           <li> <b>First Layer Model : Algorithmia model </b>- To find if the image has any human faces involved in it. If YES then the face emotions are extracted out to be associated with image.</li>
@@ -165,3 +165,32 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
     ![ibm-ana-DB4](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ana4.png)<br>
     
    
+<h4> Module 3 : ibm-recommender </h4>
+<ul>
+  <li> Python packages Used : numpy,pandas,gensim,nltksklearn,pyLDAvis,datetime,kmodes,pickle etc</li>
+  <li> After ibm-analyser has updated the user document,based on emotion the UI calls the recommender for pro-tips from doctors and psychologists to fight the adverse effects of emotions. This REST Server acting as recommendation engine then returns a set of 5 articles obtained from LDA and TF-IDF Model.</li>
+  <li><h6>LDA - Latent Dirichlet Allocation Model : </h6></li>
+  <ul>
+    <li> Motivation : Using API input, where the emotion param is a piece of text describing the user's state, the LDA Model using topic modelling on the corpus of articles it has, tries to find related articles.</li>
+    <li> Outcome : 2 Articles from LDA are concatenated to JSON Response.</li>
+  </ul>
+  <li><h6>TF-IDF - TermFrequency - InverseDocumentFrequency Model : </h6></li>
+  <ul>
+    <li> Motivation : It tries to cluster articles based on term weights and uses cosine similarity between the input param and each vector representation of article from corpus and returns top 3 srticles with maximum matching scores.</li>
+    <li>Outcome : 3 Articles from LDA are concatenated to JSON Response.</li>
+     </ul>
+ 
+  
+  <li><h6> Process Flow : </h6></li>
+  <ul>
+  <li>Both Models have been pickled and at run time the pickled representation of them are used to come up with a set of 5 articles from the corpus that are most similar to the input param text received at th ePAI endpoint.</li>
+  <li>Typical API Call looks like : http://ibm-recommender.herokuapp.com/recommendations/fear</li>
+  <li>Snapshots : Recommendation Engine and REST-Response</li>
+  </ul>
+</ul>
+
+
+ ![ibm-rec-DB1](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-rec1.png)<br>
+    ![ibm-rec-DB2](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-rec2.png)<br>
+
+    
