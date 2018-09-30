@@ -233,7 +233,7 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
   <li><h6> Process Flow : </h6></li>
   <ul>
   <li>UI does API calls and gets the dashboard populated with data from DB and external 3rd party APIs.</li>
-  <li>Snapshots : UI elements are as follows.</li>
+  <li>Few Snapshots : UI elements are as follows.</li>
   </ul>
 </ul>
 
@@ -241,4 +241,4 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
  ![ibm-ui-DB1](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ui1.png)<br>
  ![ibm-ui-DB2](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ui2.png)<br>
  ![ibm-ui-DB3](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ui3.png)<br>
- ![ibm-ui-DB4](https://github.com/amitabh27/hackathon/blob/master/gitRepo%20metadata/ibm-ui4.png)<br>
+
