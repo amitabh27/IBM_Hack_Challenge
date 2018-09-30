@@ -1,0 +1,24 @@
+{
+  "name": "language_translation",
+  "version": "1.0.0",
+  "description": "Language Translation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  
+  "author": "Akash",
+  "license": "ISC",
+  "dependencies": {
+    "algorithmia": "^0.3.10",
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "image-downloader": "^3.4.1",
+    "request": "^2.88.0",
+    "watson-developer-cloud": "^3.10.0"
+  }
+}
