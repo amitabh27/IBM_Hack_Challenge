@@ -25,3 +25,48 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
 </li>  
   
 </ul>
+
+# Architecture of solution implemented
+
+
+# Technology Stack used 
+
+<ul>
+  <li><b> ibm-aggregator : </b></li>
+  <ul>
+     <li>Server-Type : REST</li>
+     <li>Programming Language : Python</li>
+     <li>App : Flask App</li>
+     <li>Hosted : heroku </li>
+     <li>Major API Endpoint : http://ibm-aggregator.herokuapp.com/aggregate/valid_mediumID/valid_twitterID/valid_instagramID</li>
+    <li> 3rd Party APIs used : Twitter REST API,Medium RSS Feed, Instagram APIs. </li>
+  </ul>
+  <li><b> ibmanalyser : </b></li>
+  <ul>
+     <li>Server-Type : NodeJS Project (Web-APP + REST Server)</li>
+     <li>Programming Language : NodeJS with Express Framework</li>
+     <li>App : NodeJS App</li>
+     <li>Hosted : IBM Cloud </li>
+     <li>Database : MongoDB hosted on MLAB </li>
+     <li>Major API Endpoint : https://ibmanalyser.eu-gb.mybluemix.net/readProfile/valid_twitterID/valid_mediumID/valid_instagramID</li>
+    <li> 3rd Party APIs used : Youtube APIs, Nearby Places APIs,Google Chart APIs,Algorithmia Models,IBM Custom Model APIs,ibm-recommender APIs, IBM - Language Transaltor,NLP and Analytics,Tone Analyser,Personality insights etc</li>
+  </ul> 
+  <li><b> ibm-recommender : </b></li>
+  <ul>
+     <li>Server-Type : REST</li>
+     <li>Programming Language : Python</li>
+     <li>App : Flask App</li>
+     <li>Hosted : heroku </li>
+     <li>Major API Endpoint : http://ibm-recommender.herokuapp.com/recommendations/emotion_detected</li>
+    <li> Machine Learning Models Used : LDA and Tf-IDF</li>
+    <li>Data for ML Models : CSVs with tips from doctors and psychologists to fight different emotions.</li>
+  </ul>
+<ul>
+
+
+
+
+
+
+
+
