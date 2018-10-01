@@ -1,4 +1,4 @@
-# hackathon
+# Hackathon
 SHADE Engine to detect the emotions of a person based on his/her social media activity and recommend measures to improve upon the same.
 <ul>
   <li>Ideation document : </li>
@@ -7,6 +7,12 @@ SHADE Engine to detect the emotions of a person based on his/her social media ac
 </ul>
 
 # Key Value Proposition 
+1) Data is fetched not only from Twitter but also from Medium.com and Instagram
+2) Emotion detection is applied on photos shared on Instagram apart from text
+3) Derive personality insights apart from emotion
+4) Graphical representation of data using Google Charts (Bar Graph, Donut Pie-chart, 3D chart etc)
+5) Recommendation engine for providing tips based upon emotion detected
+6) Use of Language Translator module to translate all tweets to English so that other IBM Watson services can use it effectively
 
 # Problem Statement
 
