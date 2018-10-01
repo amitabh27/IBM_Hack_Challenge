@@ -5,7 +5,7 @@ SHADE Engine to detect the emotions of a person based on his/her social media ac
   <li> Presentation Slides : </li>
   <li> Working of solution (video) : </li>
 </ul>
-
+# Key Value Proposition 
 # Problem Statement
 
 Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE) is a software solution which tries to analyse your current emotions based on the content that you share on different social media websites. With advances in technology, it has now become easy to detect the emotions user is going though by using NLP on the text shared which when combined with visual recognition on the images gives a concrete solution to take calm down measures before hand he/she chooses any drastic actions.
