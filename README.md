@@ -1,8 +1,8 @@
 # Hackathon
 SHADE Engine to detect the emotions of a person based on his/her social media activity and recommend measures to improve upon the same.
 <ul>
-  <li>Ideation document : https://drive.google.com/file/d/1SfxuDisot68RZHiP3gSiBwSLMJN34BZm/view </li>
-  <li> Presentation Slides : https://drive.google.com/file/d/1VkkNxEe0T8VLpoSQJ1ocEncvEyZEhcla/view?usp=sharing </li>
+  <li>Ideation document :  https://drive.google.com/file/d/1Rp69YUHS84JjD9aDS4vXSIRgOKPl8s2H/view?usp=sharing </li>
+  <li> Presentation Slides : https://drive.google.com/file/d/1qUwgXHVDymvgE_0YvWnrbQEmHhfx2sgw/view?usp=sharing </li>
   <li> Working of solution (video) : </li>
 </ul>
 
