@@ -228,7 +228,7 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
   
   <li><h6>Google Nearby APIs for Nearby places to eat,worship or of natural beauty: </h6></li>
   <ul>
-    <li> Motivation : To cheer up people with depressions, psychologu syas it's important to get out of your home, visit places that have good vibes to calm down your mind. The user's current location can be known through browser. Currently set to "electronic city bangalore". Then the Nearby APIs are called to get list of restaurants,holy places and natural beauties around that location. </li>
+    <li> Motivation : To cheer up people with depressions, psychologists says it's important to get out of your home, visit places that have good vibes to calm down your mind. The app asks the permission to know the current location of the user. Then the Nearby APIs are called to get list of restaurants,holy places and natural beauties around that location. </li>
     <li> Outcome : Lists of places, clicking on any list item, redirects to google maps with the the source as your current location and destination as the Latitude,Longitude of list item you clicked on giving you a glimpse of how to reach the destination./li>
   </ul>
   
