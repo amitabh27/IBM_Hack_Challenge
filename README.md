@@ -18,6 +18,7 @@ SHADE Engine to detect the emotions of a person based on his/her social media ac
 6) Use of Language Translator module to translate all tweets to English so that other IBM Watson services can use it effectively
 7) Based on emotion detected, various yoga positions have been displayed
 8) If user is sad or feeling disgusted, it is very dangerous to leave him alone. So we have shown nearby temples, hotels and natural places using Google Nearby APIs so that he will come out of room and explore places and will not be alone in public places.
+9) To show the various places like hotels, temples and natural places, application uses the current location of the user.
 
 
 # Problem Statement
