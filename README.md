@@ -113,8 +113,8 @@ Help me with my Mood with Social-media Health Analysis and Display Engine (SHADE
   
   <li><h6> Process Flow : </h6></li>
   <ul>
-  <li>When user provides the social media handles the UserInterface first calls the ibm-aggregator module to fetch the data into DB which would be then analysed.</li>
-  <li>Typical API Call looks like : http://ibm-aggregator.herokuapp.com/aggregate/oldirony/amitabhtiwari3/pandey_amita</li>
+  <li>When user provides the social media handles the User Interface first calls the ibm-aggregator module to fetch the data into DB which would be then analysed.</li>
+  <li>Typical API Call looks like : http://ibm-aggregator.herokuapp.com/aggregate/oldirony/amitabhtiwari3/amita_pandey</li>
   <li>Now the DB Document created for this user looks like:</li>
   </ul>
 </ul>
