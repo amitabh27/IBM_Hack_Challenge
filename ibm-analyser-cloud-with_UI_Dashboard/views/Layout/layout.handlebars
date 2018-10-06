@@ -5,12 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <style>
  	.btn-glyphicon { padding:8px; background:#ffffff; margin-right:4px; }
  	.icon-btn { padding: 1px 15px 3px 2px; border-radius:50px;}
+
+ 	/*#insert9{
+ 		background-image: url("../assets/images/bgimage.png");
+ 	}*/
 
  	.wrapper{
       display:grid;
@@ -22,9 +27,10 @@
     }
 
     .wrapper > div{
-      background:#eee;
+      background:#EAF0F1;
       padding:1em;
       border:#333 1px solid;
+      
     }
 
     /*.wrapper > div:nth-child(odd){
@@ -37,13 +43,14 @@
       /*grid-template-columns:repeat(3, 1fr);*/
       grid-gap:1em;
       /* grid-auto-rows:100px; */
-      grid-auto-rows: minmax(100px, 500px);
+      grid-auto-rows: minmax(100px, 600px);
     }
 
     .wrapper1 > div{
-      background:#eee;
+      background:#EAF0F1;
       padding:1em;
       border:#333 1px solid;
+      
     }
 
     .wrapper2{
@@ -56,9 +63,10 @@
     }
 
     .wrapper2 > div{
-      background:#eee;
+      background:#EAF0F1;
       padding:1em;
       border:#333 1px solid;
+      
     }
 
     .wrapper3{
@@ -71,9 +79,10 @@
     }
 
     .wrapper3 > div{
-      background:#eee;
+      background:#EAF0F1;
       padding:1em;
       border:#333 1px solid;
+      
     }
 
     .nested{
@@ -92,66 +101,454 @@
     	height:40px;
     }
 
+    /*body
+    {
+    	background-image: url("bgimage.png");
+    }*/
+
     .page-header {
     font-size: 20px;
-    color: #BB2CD9;
+    color: #EAF0F1;
 }
 	#search{
 		border-style: ridge;
 	}
+
+	body{
+  	font-family: 'Ubuntu', serif;
+  	font-size: 14px;
+	}
+	
+	#header{
+		margin: auto;
+		height: 50px;
+    	width: auto;
+    	color:#ffffff;
+    	background-color: #000000;
+    	display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+
+	#insert10{
+		margin: auto;
+		height: 50px;
+    	width: auto;
+    	color:#ffffff;
+    	background-color: #000000;
+    	display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+
+	.required{
+		color: #45CE30;
+	}
     
   </style>  
 </head>
-<body>
-<div class="container2"><br>
-	<div class="page-header">
-    <h1 align="center">SHADE ENGINE</h1>      
-  	</div>
+<body bgcolor="#25CCF7">
+<div id="header" class="container2"><br>
+    	<h4 id="label" align="center">SHADE ENGINE</h4>      
 </div>
-<div class="container1"><br>
+<div class="container1">
   <form action="#menu1" id="search" class="form-inline" onsubmit="demo()">
 		<div class="form-group">
-			<label for="Twitter ID">Twitter ID:</label>
-          	<input type="email" style="margin:5px;" class="form-control" placeholder="Enter Twitter Handle" id="tid">&nbsp;&nbsp;&nbsp;&nbsp;
-          	<label for="Medium ID">Medium ID:</label>
-          	<input type="email" style="margin:5px;" class="form-control" placeholder="Enter Medium ID" id="mid">&nbsp;&nbsp;&nbsp;&nbsp;
-          	<label for="Instagram ID">Instagram ID:</label>
-          	<input type="email" style="margin:5px;" class="form-control" placeholder="Enter Instagram ID" id="iid">&nbsp;&nbsp;&nbsp;&nbsp;
+			<label class="required" for="Twitter ID">Twitter ID:</label>&nbsp;&nbsp;&nbsp;
+<input type="text" style="margin:5px;" class="form-control" placeholder="E.g. amitabhtiwari3" id="tid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          	<label class="required" for="Medium ID">Medium ID:</label>&nbsp;&nbsp;&nbsp;
+<input type="text" style="margin:5px;" class="form-control" placeholder="E.g. oldirony" id="mid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          	<label class="required" for="Instagram ID">Instagram ID:</label>&nbsp;&nbsp;&nbsp;
+<input type="text" style="margin:5px;" class="form-control" placeholder="E.g. amita_pandey" id="iid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<!--<button type="submit"  class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Submit</button>-->
 			<button type="submit" style="margin:5px;" class="btn btn-primary">Submit</button>&nbsp;&nbsp;
 		</div>
 	</form>
-</div>
-<br><br>
+	</div>
 <div class="wrapper">
 	<div id="labelwrap">
-		<h4 align="center"><span class = "label label-primary">Personality Insights </span></h4>
+		<h4 align="center"><span class = "label label-primary">Personality Insights</span></h4>
 		<div id="insert"></div>
 	</div>
 </div>
 <div class="wrapper1">
-	<div id="insert2"></div>
-	<div id="insert4"></div>
-	<div id="insert3"></div>
+	<div id="labelwrap1">
+		<h4 align="center"><span class = "label label-primary">Feelings from Tweets </span></h4>
+		<div id="insert2"></div><br><br>
+		<textarea rows="2" cols="60" style="text-align:left;" readonly>
+From the tweets, it tells things which you are tweeting positive about, things which you are tweeting negative about and neutral things.
+		</textarea>
+	</div>
+	<div id="labelwrap2">
+		<h4 align="center"><span class = "label label-primary">Datewise Emotions about your Tweets </span></h4>
+		<div id="insert4"></div><br>
+		<textarea rows="2" cols="80" readonly>
+Above bar graph shows emotions in percentages derived from your tweets of last 7 days.
+		</textarea>
+	</div>
+	<div id="labelwrap3">
+		<h4 align="center"><span class = "label label-primary">Entities in your Tweets </span></h4>
+		<div id="insert3"></div><br>
+		<textarea rows="3" cols="45" readonly>
+Above donut chart shows various types of entities you are tweeting about including instances of those entities.
+		</textarea>
+	</div>
 </div>
+
 <div class="wrapper2">
-	<div id="insert9"></div>
-	<div id="insert1"></div>
-	<div id="insert6"></div>
+	<div id="labelwrap9">
+		<h4 align="center"><span class = "label label-primary">Tips From Recommender </span></h4>
+		<div id="insert9"></div>
+	</div>
+	<div id="labelwrap4">
+		<h4 align="center"><span class = "label label-primary">Emotions thorugh Instagram</span></h4>
+		<div id="insert1"></div><br>
+		<textarea rows="2" cols="80" readonly>
+Above pie-chart shows emotions expressed through pictures shared on instagram.
+		</textarea>
+	</div>
+	<div id="labelwrap6">
+		<h4 id="youtube_title" align="center"><span class = "label label-primary">Videos For     </span></h4>
+		<div id="insert6"></div>
+	</div>
 </div>
 <div class="wrapper3">
 	<div id="insert8"></div>
-	<div class="nested">
-		<div id="insert5"></div>
+	<div id="nested">
+		<div id="insert5"></div><br><br><br><br>
+		<textarea id="yogatext" rows="6" cols="80" readonly=""></textarea>
 	</div>
-	<div id="insert7"></div>
+	<div id="labelwrap7">
+		<h4 id="youtube_title11" align="center"><span class = "label label-primary">Songs For     </span></h4>
+		<div id="insert7"></div>
+	</div>
 </div>
+<div class="wrapper4">
+	<div id="insert10">
+		<h4 id="label" align="center">&#169; - Brogrammers - A SHADE Engine developed by Team Brogrammers</h4>
+		<!--<input type="text" size="50" value="&#169; - Brogrammers - A SHADE Engine developed by Team Brogrammers" readonly>-->
+	</div>
+</div><br>
 
  <script type="text/javascript">
   	var emotion = [0,0,0,0,0,0];
   	var res = "";
   	var feeling = "";
-  	var tid="1";var mid="2";var iid="3";
+  	//var tid="1";var mid="2";var iid="3";
+  	var tid="";var mid="";var iid="";
+  	var lati="";var longi="";
+  	var locflag=0;
+
+  	$(document).ready(function(){
+     	/*$(".wrapper").hide();
+     	$(".wrapper1").hide();
+     	$(".wrapper2").hide();
+     	$(".wrapper3").hide();*/
+     	$("#labelwrap").hide();
+		$("#labelwrap1").hide();
+		$("#labelwrap2").hide();
+		$("#labelwrap3").hide();
+		$("#labelwrap4").hide();
+		$("#labelwrap9").hide();
+		$("#labelwrap6").hide();
+		$("#insert8").hide();
+		$("#nested").hide();
+		$("#labelwrap7").hide();
+
+	});
+
+  function getLocation()
+  {
+  		console.log("getLocation");
+
+  		/*navigator.geolocation.getCurrentPosition(success, error,{timeout:600});
+
+  		if (!navigator.geolocation)
+  		{
+    		console.log("Geolocation is not supported by your browser");
+    		return;
+  		}
+
+  		function success(position)
+  		{
+  			locflag = 1;
+    		lati  = position.coords.latitude;
+    		longi = position.coords.longitude;
+  		}
+
+  		function error()
+  		{
+    		console.log("Unable to retrieve your location");
+  		}*/
+
+  		if(navigator.geolocation)
+  		{
+  			navigator.geolocation.getCurrentPosition(function(position){
+  				locflag = 1;
+    		lati  = position.coords.latitude;
+    		longi = position.coords.longitude;
+    		console.log("hold");
+  			});
+  		}
+  		else
+  			console.log("geolocation is not supported");
+  		
+  }
+
+
+
+  function demo()
+  {
+  	 console.log("demo");
+  	 //google.charts.load("current", {packages:["corechart"]});
+  	 //var articles_url="https://api.mlab.com/api/1/databases/ibm/collections/aggregate?apiKey=WOHHCPMZkpDGw3EfKOIOYCZ7eA25aiLf";
+  	 var one=0;var two=0;var three=0;
+  	 var one_url="empty";var two_url="empty";var three_url="empty";
+  	 var arr = new Array();
+  	 
+  	 tid = document.getElementById("tid").value;
+  	 mid = document.getElementById("mid").value;
+  	 iid = document.getElementById("iid").value;
+
+  	 if(tid == "" || mid == "" || iid=="")
+  	 {
+  	 	alert("Please Enter all 3 social handles");
+  	 	return false;
+  	 }
+
+  	 getLocation();
+  	 	/*if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+              lati: position.coords.latitude;
+              longi: position.coords.longitude;
+          });
+      }*/
+           
+
+  	 	/*$(".wrapper").show();
+     	$(".wrapper1").show();
+     	$(".wrapper2").show();
+     	$(".wrapper3").show();*/
+     	
+		var uri = "https://ibmanalyser.eu-gb.mybluemix.net/users/readProfile/"+tid+"/"+mid+"/"+iid;
+		var uri1 = "https://api.mlab.com/api/1/databases/ibm/collections/aggregate?apiKey=WOHHCPMZkpDGw3EfKOIOYCZ7eA25aiLf";
+  	 var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200)
+				{
+					console.log("IBM Aggregator Succeeded");
+					//ibm aggregator response has come, now calling ibm analyser
+					//$.ajaxSetup({async:false});
+					var xhttp1 = new XMLHttpRequest();
+					xhttp1.onreadystatechange = function() {
+						if(this.readyState == 4 && this.status == 200)
+						{
+							console.log("IBM Analyser Succeeded");
+							var xhttp2 = new XMLHttpRequest();
+							xhttp2.onreadystatechange = function() {
+								if(this.readyState == 4 && this.status == 200)
+								{
+
+								
+
+					/*$.ajax({
+		   					type: "GET",
+		   					dataType: "json",
+		   					url: uri,
+         					success: function (data) {*/
+							
+							
+							// var uri1 = "https://api.mlab.com/api/1/databases/ibm/collections/aggregate?apiKey=WOHHCPMZkpDGw3EfKOIOYCZ7eA25aiLf";
+							 
+							/*$.ajax({
+		   					type: "GET",
+		   					dataType: "json",
+		   					url: uri1,
+         					success: function (data) {*/
+         						//ibm analyser response has come
+							console.log("mlab Succeeded");
+						var response = xhttp2.responseText;
+						res=JSON.parse(response);
+						console.log("length:"+res.length);
+					
+					for(var j=0;j<res.length;j++)
+					{
+						if(tid == res[j].twitterid && mid == res[j].mediumid && iid == res[j].instagramid)
+						{
+							for(var i=0;i<res[j].posts.length;i++)
+							{
+								
+								var no=res[j].posts[i].likes;
+								if(no > one)
+								{
+									three = two;
+									two = one;
+									one = no;
+									one_url = res[j].posts[i].url;
+								}
+								else if(no > two)
+								{
+									three = two;
+									two = no;
+									two_url = res[j].posts[i].url;	
+								}
+								else if(no > three)
+								{
+									three = no;
+									three_url = res[j].posts[i].url;
+								}
+							}
+
+							for(var k=0;k<res[j].tweets.length;k++)
+							{
+								for(var m=0;m<res[j].tweets[k].tone_analyser.length;m++)
+								{
+									var local = res[j].tweets[k].tone_analyser[m].name;
+									if(local == "Neutral")
+										emotion[5] = emotion[5] + 1;
+									else if(local == "Sad")
+										emotion[1] = emotion[1] + 1;
+									else if(local == "Anger")
+										emotion[2] = emotion[2] + 1;
+									else if(local == "Fear")
+										emotion[3] = emotion[3] + 1;
+									else if(local == "Disgust")
+										emotion[4] = emotion[4] + 1;
+									else
+										emotion[0] = emotion[0] + 1;
+								}
+							}
+						}
+					}
+
+						arr[0] = one_url;
+						arr[1] = two_url;
+						arr[2] = three_url;
+						//console.log(arr+"\n\n");
+						var score = 0;
+						for(var x=0;x<6;x++)
+						{
+							if(score < emotion[x] && x == 0)
+							{
+								feeling = "Joy";
+								score = emotion[x];
+							}
+							else if(score < emotion[x] && x == 1)
+							{
+								feeling = "Sad";
+								score = emotion[x];
+							}
+							else if(score < emotion[x] && x == 2)
+							{
+								feeling = "Anger";
+								score = emotion[x];
+							}
+							else if(score < emotion[x] && x == 3)
+							{
+								feeling = "Fear";
+								score = emotion[x];
+							}
+							else if(score < emotion[x] && x == 4)
+							{
+								feeling = "Disgust";
+								score = emotion[x];
+							}
+							else if(score < emotion[x] && x == 5)
+							{
+								feeling = "Neutral";
+								score = emotion[x];
+							}
+						}
+
+
+				var xyz = "";
+				var xyz11 = "";
+
+				if(feeling == "Neutral")
+					xyz = "Videos For Happiness"+"\n";
+				else
+					xyz = "Videos For " + feeling+"\n";
+
+				if(feeling == "Neutral")
+					xyz11 = "Songs For Happiness"+"\n";
+				else
+					xyz11 = "Songs For " + feeling+"\n";
+
+				
+				console.log(feeling+" "+emotion);
+				var up = "";
+				var up11= "";
+		up = up.concat("<div>").concat("<h4 align=\"center\"><span class=\"label label-primary\">").concat(xyz).concat("</span>").concat("</h4>").concat("</div");
+		up11 = up11.concat("<div>").concat("<h4 align=\"center\"><span class=\"label label-primary\">").concat(xyz11).concat("</span>").concat("</h4>").concat("</div");
+						document.getElementById('youtube_title').innerHTML = up;
+						document.getElementById('youtube_title11').innerHTML = up11;
+
+						//For Personality Insights
+						$("#labelwrap").show();
+						google.charts.load("current", {packages:["bar"]});
+      					google.charts.setOnLoadCallback(drawBar);
+
+      					//For nlu keywords
+      					$("#labelwrap1").show();
+      					google.charts.load("current", {packages:["corechart"]});
+      					google.charts.setOnLoadCallback(drawExploding);
+						
+						//For stacked bar-graph Datewise Tweets
+						$("#labelwrap2").show();
+						google.charts.load('current', {packages: ['corechart', 'bar']});
+						google.charts.setOnLoadCallback(drawChart);
+
+						// For nlu entities
+						$("#labelwrap3").show();
+						google.charts.load("current", {packages:["corechart"]});
+      					google.charts.setOnLoadCallback(drawDonutChart);
+
+      					
+      					$("#labelwrap4").show();
+      					//For instagram photos
+      					google.charts.load("current", {packages:["corechart"]});
+      					google.charts.setOnLoadCallback(draw3DPieChart);
+
+      					$("#labelwrap9").show();
+      					articles();
+      					$("#labelwrap6").show();
+      					videos();
+      					$("#insert8").show();
+						places();
+						$("#nested").show();
+						yogas();
+						$("#labelwrap7").show();
+      					songs();
+      					
+      					
+      				}
+				};
+				xhttp2.open("GET",uri1,true);
+				xhttp2.send();	
+			}
+		};
+		xhttp1.open("GET",uri,true);
+		xhttp1.send();	
+					/*},
+					error: function (data) {
+                         console.log('An inner error occurred.');
+                         console.log(data);
+                         alert("error");
+                     },
+                });
+
+				},
+				error: function (data) {
+                         console.log('An error occurred.');
+                         console.log(data);
+                         alert("error");
+                     },
+                });*/
+				}
+		};
+		xhttp.open("GET","https://ibm-aggregator.herokuapp.com/aggregate/"+mid+"/"+tid+"/"+iid, true);
+		xhttp.send();
+  }//end of demo
 
   function videos()
   {
@@ -167,7 +564,7 @@
   x="mr bean videos in english";
   var merchant="";
   
-  var video_url="https://ibmanalyser.eu-gb.mybluemix.net/users/youtube/"+x;
+  var video_url="https://ibm-analyser.herokuapp.com/youtube/"+x;
   var video_area="";
   
 		var xhttp = new XMLHttpRequest();
@@ -175,7 +572,7 @@
 				if (this.readyState == 4 && this.status == 200)
 				{
 					var response = xhttp.responseText;
-					var res=JSON.parse(response);
+					var res=JSON.parse(response);-
 					console.log(res);
 					var title,desc,image,link;
 					
@@ -240,7 +637,7 @@
   x="arjit songs songs 2018";
   
   
-  var song_url="https://ibmanalyser.eu-gb.mybluemix.net/users/youtube/"+x;
+  var song_url="https://ibm-analyser.herokuapp.com/youtube/"+x;
   var song_area="";
   
 		var xhttp = new XMLHttpRequest();
@@ -269,6 +666,10 @@
 						var d = desc.length;
 						var desc_new = desc;
 
+						if(t > 35)
+						{
+							title_new = title.substring(0,35).concat("...");
+						}
 						if(d > 35)
 						{
 							desc_new = desc.substring(0,35).concat("...");
@@ -350,6 +751,7 @@
 
 					for(var i=0;i<5;i++)
 					{
+						var temp=res.articles[i];
 						articles_area=articles_area.concat(" <div id=\"demo").concat(i*9).concat("\" class=\"collapse\">");
 						articles_area=articles_area.concat(temp);
 						articles_area=articles_area.concat("</div>");
@@ -372,13 +774,23 @@
   function places()
   {
   
-	var location = "electronic city bangalore";
-	
-	var food_url="https://ibmanalyser.eu-gb.mybluemix.net/users/n/food/"+location;
-	var places_url="https://ibmanalyser.eu-gb.mybluemix.net/users/n/natural/feature/"+location;
-	var worship_url="https://ibmanalyser.eu-gb.mybluemix.net/users/n/place/of/worship/"+location;
+	//var location = "electronic city bangalore";
+	console.log("places:"+lati+" "+longi);
+	var location = lati+","+longi;
+	//var food_url="https://ibmanalyser.eu-gb.mybluemix.net/users/n/food/"+location;
+	//var places_url="https://ibmanalyser.eu-gb.mybluemix.net/users/n/natural/feature/"+location;
+	//var worship_url="https://ibmanalyser.eu-gb.mybluemix.net/users/n/place/of/worship/"+location;
+	var food_url="https://ibmanalyser.eu-gb.mybluemix.net/users/n/food/"+lati+"/"+longi;
+	var places_url="https://ibmanalyser.eu-gb.mybluemix.net/users/n/natural/feature/"+lati+"/"+longi;
+	var worship_url="https://ibmanalyser.eu-gb.mybluemix.net/users/n/place/of/worship/"+lati+"/"+longi;
+	//var food_url = "http://localhost:3000/users/n/food/"+lati+"/"+longi;
+	//var places_url = "http://localhost:3000/users/n/natural/feature/"+lati+"/"+longi;
+	//var worship_url="http://localhost:3000/users/n/place/of/worship/"+lati+"/"+longi;
 	var f_name=new Array();var f_pos=new Array();var n_name=new Array();var n_pos=new Array();var w_name=new Array();var w_pos=new Array();
 	var places="";
+	console.log(food_url);
+	console.log(places_url);
+	console.log(worship_url);
 	
   
 		var xhttp = new XMLHttpRequest();
@@ -518,16 +930,18 @@
 		
 		var emotion=feeling;
 
-		
-
-
 		var yogas_area="";
 		
 			yogas_area=yogas_area.concat("<div class=\"container\">");
 		
 			if(emotion.toLowerCase()=="anger" || emotion.toLowerCase()=="disgust")
 			{
-			
+				var str = "Yogasana to control anger and disgust:".concat("\n");
+				str = str.concat("1) Balasanna").concat("\n");
+				str = str.concat("2) Matsyasana").concat("\n");
+				str = str.concat("3) Savasana").concat("\n");
+				str = str.concat("4) Sukhasana");
+
 				yogas_area=yogas_area.concat("<div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\"><ol class=\"carousel-indicators\">");
 				yogas_area=yogas_area.concat("<li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>");
 				yogas_area=yogas_area.concat("<li data-target=\"#myCarousel\" data-slide-to=\"1\" ></li>");
@@ -535,19 +949,28 @@
 				yogas_area=yogas_area.concat("<li data-target=\"#myCarousel\" data-slide-to=\"3\"></li></ol>");
 				
 				yogas_area=yogas_area.concat("<div class=\"carousel-inner\">");
-				yogas_area=yogas_area.concat("<div class=\"item active\"><img src=\"public/assets/images/anger/Balasanna.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/anger/Matsyasana.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/anger/Savasana.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/anger/Sukhasana.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item active\"><img src=\"../assets/images/anger/Balasanna.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/anger/Matsyasana.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/anger/Savasana.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/anger/Sukhasana.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
 				yogas_area=yogas_area.concat("</div>");
 				
 				yogas_area=yogas_area.concat("<a class=\"left carousel-control\" href=\"#myCarousel\" data-slide=\"prev\"><span class=\"glyphicon glyphicon-chevron-left\"></span><span class=\"sr-only\">Previous</span></a><a class=\"right carousel-control\" href=\"#myCarousel\" data-slide=\"next\"><span class=\"glyphicon glyphicon-chevron-right\"></span><span class=\"sr-only\">Next</span></a>");
 				yogas_area=yogas_area.concat("</div></div>");
 				
 				document.getElementById('insert5').innerHTML = yogas_area;
+				document.getElementById('yogatext').innerHTML = str;
 			}
 			else if(emotion.toLowerCase()=="fear" || emotion.toLowerCase()=="sad")
 			{
+				var str = "Yogasana to overcome fear and sadness:".concat("\n");
+				str = str.concat("1) Adho-Mukha-Svanasana").concat("\n");
+				str = str.concat("2) Balasanna").concat("\n");
+				str = str.concat("3) Halasanna").concat("\n");
+				str = str.concat("4) Savasana").concat("\n");
+				str = str.concat("5) Sethu-Bandasanna").concat("\n");
+				str = str.concat("6) Urdhva-Mukha-Svanasana").concat("\n");
+				str = str.concat("7) Uttasanna");
 			
 				yogas_area=yogas_area.concat("<div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\"><ol class=\"carousel-indicators\">");
 				yogas_area=yogas_area.concat("<li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>");
@@ -559,23 +982,30 @@
 				yogas_area=yogas_area.concat("<li data-target=\"#myCarousel\" data-slide-to=\"6\"></li></ol>");
 				
 				yogas_area=yogas_area.concat("<div class=\"carousel-inner\">");
-				yogas_area=yogas_area.concat("<div class=\"item active\"><img src=\"public/assets/images/depression/Adho-Mukha-Svanasana.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/depression/Balasanna.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/depression/Halasanna.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/depression/Savasana.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/depression/Sethu-Bandasanna.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/depression/Urdhva-Mukha-Svanasana.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/depression/Uttasanna.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item active\"><img src=\"../assets/images/depression/Adho-Mukha-Svanasana.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/depression/Balasanna.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/depression/Halasanna.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/depression/Savasana.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/depression/Sethu-Bandasanna.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/depression/Urdhva-Mukha-Svanasana.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/depression/Uttasanna.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
 				yogas_area=yogas_area.concat("</div>");
 				
 				yogas_area=yogas_area.concat("<a class=\"left carousel-control\" href=\"#myCarousel\" data-slide=\"prev\"><span class=\"glyphicon glyphicon-chevron-left\"></span><span class=\"sr-only\">Previous</span></a><a class=\"right carousel-control\" href=\"#myCarousel\" data-slide=\"next\"><span class=\"glyphicon glyphicon-chevron-right\"></span><span class=\"sr-only\">Next</span></a>");
 				yogas_area=yogas_area.concat("</div></div>");
 				
-				document.getElementById('insert').innerHTML = yogas_area;
+				document.getElementById('insert5').innerHTML = yogas_area;
+				document.getElementById('yogatext').innerHTML = str;
 			
 			}
 			else
 			{
+				var str = "Yogasana for Happiness:".concat("\n");
+				str = str.concat("1) Cat-Cow Pose").concat("\n");
+				str = str.concat("2) Crow Pose").concat("\n");
+				str = str.concat("3) Pigeon Pose").concat("\n");
+				str = str.concat("4) Warrier-2 Pose").concat("\n");
+				str = str.concat("5) Wheel Pose");	
 			
 				yogas_area=yogas_area.concat("<div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\"><ol class=\"carousel-indicators\">");
 				yogas_area=yogas_area.concat("<li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>");
@@ -585,17 +1015,18 @@
 				yogas_area=yogas_area.concat("<li data-target=\"#myCarousel\" data-slide-to=\"4\"></li></ol>");
 				
 				yogas_area=yogas_area.concat("<div class=\"carousel-inner\">");
-				yogas_area=yogas_area.concat("<div class=\"item active\"><img src=\"public/assets/images/happy/Cat-Cow.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/happy/Crow.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/happy/Pigeon.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/happy/Warrier-2.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
-				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"public/assets/images/happy/Wheel.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item active\"><img src=\"../assets/images/happy/Cat-Cow.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/happy/Crow.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/happy/Pigeon.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/happy/Warrier-2.png\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
+				yogas_area=yogas_area.concat("<div class=\"item\"><img src=\"../assets/images/happy/Wheel.jpg\" alt=\"Los Angeles\" style=\"width:100%;\"> </div>");
 				yogas_area=yogas_area.concat("</div>");
 				
 				yogas_area=yogas_area.concat("<a class=\"left carousel-control\" href=\"#myCarousel\" data-slide=\"prev\"><span class=\"glyphicon glyphicon-chevron-left\"></span><span class=\"sr-only\">Previous</span></a><a class=\"right carousel-control\" href=\"#myCarousel\" data-slide=\"next\"><span class=\"glyphicon glyphicon-chevron-right\"></span><span class=\"sr-only\">Next</span></a>");
 				yogas_area=yogas_area.concat("</div></div>");
 				
 				document.getElementById('insert5').innerHTML = yogas_area;
+				document.getElementById('yogatext').innerHTML = str;
 			
 			
 			}
@@ -603,148 +1034,7 @@
 		
 		}
   
-  function demo()
-  {
-  	 console.log("demo");
-  	 //google.charts.load("current", {packages:["corechart"]});
-  	 var articles_url="https://api.mlab.com/api/1/databases/ibm/collections/aggregate?apiKey=WOHHCPMZkpDGw3EfKOIOYCZ7eA25aiLf";
-  	 var one=0;var two=0;var three=0;
-  	 var one_url="empty";var two_url="empty";var three_url="empty";
-  	 var arr = new Array();
-  	 
-  	 /*tid = document.getElementById("tid");
-  	 mid = document.getElementById("mid");
-  	 iid = document.getElementById("iid");*/
 
-  	 var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
-				if (this.readyState == 4 && this.status == 200)
-				{
-					var response = xhttp.responseText;
-					res=JSON.parse(response);
-					console.log(res);
-					
-					for(var j=0;j<res.length;j++)
-					{
-						if(tid == res[j].twitterid && mid == res[j].mediumid && iid == res[j].instagramid)
-						{
-							for(var i=0;i<res[j].posts.length;i++)
-							{
-								
-								var no=res[j].posts[i].likes;
-								if(no > one)
-								{
-									three = two;
-									two = one;
-									one = no;
-									one_url = res[j].posts[i].url;
-								}
-								else if(no > two)
-								{
-									three = two;
-									two = no;
-									two_url = res[j].posts[i].url;	
-								}
-								else if(no > three)
-								{
-									three = no;
-									three_url = res[j].posts[i].url;
-								}
-							}
-
-							for(var k=0;k<res[j].tweets.length;k++)
-							{
-								for(var m=0;m<res[j].tweets[k].tone_analyser.length;m++)
-								{
-									var local = res[j].tweets[k].tone_analyser[m].name;
-									if(local == "Neutral")
-										emotion[5] = emotion[5] + 1;
-									else if(local == "Sad")
-										emotion[1] = emotion[1] + 1;
-									else if(local == "Anger")
-										emotion[2] = emotion[2] + 1;
-									else if(local == "Fear")
-										emotion[3] = emotion[3] + 1;
-									else if(local == "Disgust")
-										emotion[4] = emotion[4] + 1;
-									else
-										emotion[0] = emotion[0] + 1;
-								}
-							}
-						}
-					}
-
-						arr[0] = one_url;
-						arr[1] = two_url;
-						arr[2] = three_url;
-						//console.log(arr+"\n\n");
-						var score = 0;
-						for(var x=0;x<6;x++)
-						{
-							if(score < emotion[x] && x == 0)
-							{
-								feeling = "Joy";
-								score = emotion[x];
-							}
-							else if(score < emotion[x] && x == 1)
-							{
-								feeling = "Sad";
-								score = emotion[x];
-							}
-							else if(score < emotion[x] && x == 2)
-							{
-								feeling = "Anger";
-								score = emotion[x];
-							}
-							else if(score < emotion[x] && x == 3)
-							{
-								feeling = "Fear";
-								score = emotion[x];
-							}
-							else if(score < emotion[x] && x == 4)
-							{
-								feeling = "Disgust";
-								score = emotion[x];
-							}
-							else if(score < emotion[x] && x == 5)
-							{
-								feeling = "Neutral";
-								score = emotion[x];
-							}
-						}
-
-						console.log(feeling+" "+emotion);
-						// For stacked bar-graph
-						google.charts.load('current', {packages: ['corechart', 'bar']});
-						google.charts.setOnLoadCallback(drawChart);
-
-						// For nlu entities
-						google.charts.load("current", {packages:["corechart"]});
-      					google.charts.setOnLoadCallback(drawDonutChart);
-
-      					//For nlu keywords
-      					google.charts.load("current", {packages:["corechart"]});
-      					google.charts.setOnLoadCallback(drawExploding);
-
-      					//For instagram photos
-      					google.charts.load("current", {packages:["corechart"]});
-      					google.charts.setOnLoadCallback(draw3DPieChart);
-
-      					//For Personality Insights
-      					google.charts.load("current", {packages:["bar"]});
-      					google.charts.setOnLoadCallback(drawBar);
-
-      					videos();
-      					songs();
-      					articles();
-      					places();
-      					yogas();
-
-				}
-		};
-		xhttp.open("GET",articles_url, true);
-		xhttp.send();
-  }
 
   	function drawBar()
   	{
@@ -897,7 +1187,7 @@
         dataTable.addRows(arr);
 
         var options = {
-          title: 'instagram sentiments',
+          //title: 'instagram sentiments',
           is3D: true,
         };
 
@@ -907,9 +1197,10 @@
 
   	function drawExploding()
   	{
+  		console.log("&&&&&&&&&&&&&& drawExploding &&&&&&&&&&&&&&& :"+res[0].twitterid+" "+res[0].mediumid+" "+res[0].instagramid);
   		var text = {};
   		var emotions = {};
-
+  		console.log(tid+" "+mid+" "+iid+"\n");
   		for(var i=0;i<res.length;i++)
 		{
 			if(tid == res[i].twitterid && mid == res[i].mediumid && iid == res[i].instagramid)
@@ -918,11 +1209,13 @@
 				{
 					if(! (res[i].NLU_keywords[j].label in emotions))
 					{
+						console.log("IF Executed **** "+res[i].NLU_keywords[j].label+"\n");
 						emotions[res[i].NLU_keywords[j].label] = 1;
 						text[res[i].NLU_keywords[j].label] = res[i].NLU_keywords[j].text;
 					}
 					else
 					{
+						console.log("ELSE Executed **** "+res[i].NLU_keywords[j].label+"\n");
 						emotions[res[i].NLU_keywords[j].label] = emotions[res[i].NLU_keywords[j].label] + 1;
 						text[res[i].NLU_keywords[j].label] = text[res[i].NLU_keywords[j].label]+","+res[i].NLU_keywords[j].text;
 					}
@@ -932,13 +1225,16 @@
 
 		var count = 0;
 		var temp = new Array();
-
+		console.log("*****Emotions***"+emotions+"\n");
+		console.log("******Text*******"+text+"\n");
 		for ( property in emotions )
 		{ 
+			console.log("property:" + property);
 			temp[count] = property;
 			count++;
 		}
-
+		console.log(" COUNT :"+count);
+		console.log("Temp: "+temp+"\n");
 		var arr = new Array(count);
 
 		for(var j=0;j<count;j++)
@@ -970,7 +1266,7 @@
          var c = arr[0][1];
          var cc = 0;
 
-         for(var i=1;i<3;i++)
+         for(var i=1;i<count;i++)
          {
          	if(c < arr[i][1])
          	{
@@ -982,7 +1278,7 @@
          console.log("cc:"+cc+" "+arr[cc][0]);
 
         var options = {
-          title: 'Emotions from Tweets',
+          //title: 'Emotions from Tweets',
           legend: 'none',
           pieSliceText: 'label',
           slices: {  1: {offset: 0.2},
@@ -1055,7 +1351,7 @@
         dataTable.addRows(arr);
 
         var options = {
-          title: 'Entities in your tweets',
+          //title: 'Entities in your tweets',
           pieHole: 0.4,
         };
 
@@ -1169,6 +1465,9 @@
 							var local = res[i].tweets[j].tone_analyser[k].name;
 							var temp = day - tdd;
 
+							if(tdm != curmonth && tdd.length == 1)
+								continue;
+
 							if(temp < 0)
 								temp = parseInt(day) + size[targetmonth - 1] - parseInt(tdd,10);
 							console.log("temp:" + temp+" "+local);
@@ -1208,7 +1507,7 @@
         height: 400,
         legend: { position: 'top', maxLines: 3 },
         bar: { groupWidth: '75%' },
-        title: 'Date-wise Tweets',
+        //title: 'Date-wise Tweets',
         isStacked: 'percent'
       };
 
