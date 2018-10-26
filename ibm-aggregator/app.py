@@ -7,10 +7,10 @@ import xml.etree.ElementTree as ET
 import re
 
 TAG_RE = re.compile(r'<[^>]+>')
-consumer_key = "OiUBzU60VTDqGEbj2wZZxkexw" 
-consumer_secret = "xt6YteNBSlAnKdLq1rPsZPLXGWVjttON2dQ1PsoJhsthFSyaBa"
-access_key = "552739862-6ZXsVyZxzEhuZvmQ1rr5JddnVt9RUm5NQJQOnpG4"
-access_secret = "WM9M6pas93UBZIgyGhnZuzRUt1Kc1b5X1v1ETZlxoPXvE"
+consumer_key = "KEY" 
+consumer_secret = "KEY"
+access_key = "KEY"
+access_secret = "KEY"
 
 medium_text=[]
 medium_time=[]
