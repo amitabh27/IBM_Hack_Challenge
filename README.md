@@ -2,11 +2,6 @@
 
 # Hackathon
 SHADE Engine to detect the emotions of a person based on his/her social media activity and recommend measures to improve upon the same.
-<ul>
-  <li>Ideation document :  https://drive.google.com/file/d/1HGmUq3Npy0pXLXizVhv-0lmxNcMXre8L/view?usp=sharing </li>
-  <li> Presentation Slides : https://drive.google.com/file/d/10tBfurB_SJwoG8FzxLQy6vb6h7RF6rVW/view?usp=sharing </li>
-  <li> Working of solution (video) : https://drive.google.com/file/d/1CUSC5347arl2MXnedHf0P-jagru9MBNZ/view?usp=sharing </li>
-</ul>
 
 # Key Value Proposition 
 1) Data is fetched not only from Twitter but also from Medium.com and Instagram
