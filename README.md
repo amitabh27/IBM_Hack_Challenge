@@ -1,4 +1,5 @@
 
+Please put your own API Keys and Servers have been removed from cloud.
 
 # Hackathon
 SHADE Engine to detect the emotions of a person based on his/her social media activity and recommend measures to improve upon the same.
