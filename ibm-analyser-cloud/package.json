@@ -12,8 +12,8 @@
   "dependencies": {
     "algorithmia": "^0.3.10",
     "async": "^2.6.1",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "fs": "0.0.1-security",
     "http": "0.0.0",
     "https": "^1.0.0",
